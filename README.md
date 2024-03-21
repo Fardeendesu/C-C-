@@ -1,4 +1,8 @@
-# C-C++
- This repo is all about the 4 years coding I have done in c and c++ mainly
+# Assembly(ARMv7,Armv8,MIPS,X86) #20th March (WedNesDay Two0TwoFour)
+# C-C++ #
+# Java
+# Python
+# Reverse Engineering 
+ This repo is all about the 4 years coding I have done
 
-   Other language that I have work on shall not be included here.
+  
