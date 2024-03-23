@@ -1,0 +1,25 @@
+1.Create worksheet contaning students following informations:
+                                                1.S-id(String type)
+                                                    ex: "CS101" //refers to the students to the Department of computer science who is of 1st with roll no.01
+2. Name contaning first name and last name:
+    Ex:  
+        Biplob Das
+3. Age(int)
+
+    (a). Write formula to extract Department year and roll in different column for all the increasing S-id
+    (b). Since they are the students of Vidyamandira create new mail-id column with help of increas in name where every entry should be of the following pattern:-  
+                                                                                                                                                            LastName_FirstNamestd @Vidyamandira.ac.in
+                                                                                                                                                            ex: Das_Biplabstd@Vidyamandira.ac.in
+                                                                                        Note:- ph,ch,mt (For physics,Chemistry,Mathamatic respectively Take minmum 5 entrys for each department)
+2. Create worksheet containing the model, year, price for each of a series of car.
+                Take min 15 entrys
+            what to do: set up formulas that enable you to enter the model and year of a car and return it's price.  
+                Also compute the avg of prices >= the median prices 
+
+
+3. Create a worksheet containing the travelling cost between 7 cities.
+    [Mumbai,Delhi,Bangalore,Chennai,Goa,Ahamedabad,Kolkata]
+    Suppose you want to travel from Mumbai to Kolkata visiting through other 5 cities also in giving sequence:
+            (1). Compute the esitamed cost for your journey
+            (2). Show all the possible road trips for your journey from Mumbai to kolkata via any one other city,and for each case show the estimated cost.
+            (3). Which trip gives you the cheapest routemap for case(2).
