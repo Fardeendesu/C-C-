@@ -1,6 +1,6 @@
 #include <iostream>
 
-using  std::cout, std::cin ;
+using  std::cout, std::cin;
 
 void AdvanceBubbleSort(int arr[], int size) {
     int flag = -1;
@@ -10,8 +10,9 @@ void AdvanceBubbleSort(int arr[], int size) {
                 int temp = arr[j];
                 arr[j] = arr[j+1];
                 arr[j+1] = temp;
+                flag  = 1;
             }
-            if(flag == 1) {
+            if(flag == -1) {
                 break;
             }
         }
