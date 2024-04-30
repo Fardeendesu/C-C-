@@ -1,0 +1,809 @@
+    1. What is OOP?
+        ◦ Object-Oriented Programming (OOP) is a programming paradigm based on the concept of "objects," which can contain data in the form of fields and code in the form of procedures.
+    2. What are the principles of OOP?
+        ◦ The principles of OOP are encapsulation, inheritance, polymorphism, and abstraction.
+    3. What is encapsulation?
+        ◦ Encapsulation is the bundling of data and methods that operate on the data into a single unit, preventing direct access to the data from outside the unit and only allowing access through defined methods.
+    4. Explain inheritance.
+        ◦ Inheritance is the mechanism by which a new class inherits properties and behaviors from an existing class. It promotes code reusability and establishes a parent-child relationship between classes.
+    5. What is polymorphism?
+        ◦ Polymorphism is the ability of objects of different classes to respond to the same message or method call in different ways. It allows objects of different types to be treated as objects of a common superclass.
+    6. What is abstraction?
+        ◦ Abstraction is the process of hiding the implementation details and showing only the essential features of an object. It helps in reducing programming complexity and effort.
+    7. What is a class in Java?
+        ◦ A class in Java is a blueprint or template for creating objects. It defines the data and methods that will be present in objects of that class.
+    8. Explain an object in Java.
+        ◦ An object in Java is an instance of a class. It has state (fields) and behavior (methods). Objects are created using the new keyword followed by a constructor.
+    9. What is a constructor?
+        ◦ A constructor in Java is a special method that is invoked when an object is instantiated. It initializes the newly created object.
+    10. Differentiate between a constructor and a method.
+        ◦ Constructors are used to initialize objects, while methods are used to perform actions or operations on objects.
+        ◦ Constructors have the same name as the class, while methods have unique names.
+        ◦ Constructors cannot return a value, while methods can.
+    11. What is method overloading?
+        ◦ Method overloading is the ability to define multiple methods in a class with the same name but different parameters. Java determines which method to execute based on the number and type of parameters passed.
+    12. Explain method overriding.
+        ◦ Method overriding occurs when a subclass provides a specific implementation of a method that is already defined in its superclass. The method signature in the subclass must match the method signature in the superclass.
+    13. What is the super keyword used for?
+        ◦ The super keyword in Java is used to refer to the superclass of the current object. It can be used to call the superclass's constructor or methods.
+    14. What is the this keyword used for?
+        ◦ The this keyword in Java is used to refer to the current object within a method or constructor. It can be used to access instance variables or invoke other constructors of the same class.
+    15. What is the difference between this and super keywords?
+        ◦ The this keyword is used to refer to the current object, while the super keyword is used to refer to the superclass of the current object.
+        ◦ this is used to differentiate between instance variables and parameters with the same name, while super is used to call superclass constructors or methods.
+    16. Explain method hiding.
+        ◦ Method hiding occurs when a subclass defines a static method with the same signature as a static method in its superclass. The method in the subclass hides the method in the superclass.
+    17. What is composition in Java?
+        ◦ Composition is a design principle in which a class contains an instance of another class as one of its fields. It represents a "has-a" relationship between classes.
+    18. What is aggregation in Java?
+        ◦ Aggregation is a special form of association where a class contains references to other classes as part of its state. It represents a "whole-part" relationship between classes.
+    19. Explain the instanceof operator.
+        ◦ The instanceof operator in Java is used to test whether an object is an instance of a particular class or interface. It returns true if the object is an instance of the specified type, otherwise false.
+    20. What is method chaining?
+        ◦ Method chaining is a programming technique where multiple method calls are chained together in a single statement. Each method returns an object, allowing the next method to be called on the returned object.
+    21. What is an abstract class?
+        ◦ An abstract class in Java is a class that cannot be instantiated directly and may contain abstract methods, which are declared but not implemented. It serves as a blueprint for other classes to extend and implement.
+    22. Can an abstract class have a constructor?
+        ◦ Yes, an abstract class can have a constructor. It is invoked when a concrete subclass is instantiated and is responsible for initializing the state of the abstract class.
+    23. What is an interface?
+        ◦ An interface in Java is a reference type that can contain only abstract methods, default methods, static methods, constant variables, and nested types. It defines a contract for classes that implement it.
+    24. Explain the difference between abstract class and interface.
+        ◦ An abstract class can contain both abstract and concrete methods, while an interface can only contain abstract methods.
+        ◦ A class can implement multiple interfaces, but it can extend only one abstract class.
+        ◦ An abstract class can have instance variables, while interfaces cannot.
+    25. What is a marker interface?
+        ◦ A marker interface in Java is an interface that does not contain any methods. It is used to indicate to the compiler or runtime environment that a class implementing the interface has some special behavior.
+    26. What is a nested class?
+        ◦ A nested class in Java is a class that is defined within another class. It can be static or non-static (inner class) and has access to the members of the enclosing class.
+    27. Explain static nested classes.
+        ◦ Static nested classes are nested classes that are declared as static. They do not have access to the instance variables and methods of the enclosing class unless they are also static.
+    28. What is an inner class?
+        ◦ An inner class in Java is a non-static nested class that is defined within another class. It has access to the instance variables and methods of the enclosing class.
+    29. What is an anonymous class?
+        ◦ An anonymous class in Java is a class without a name that is defined and What is OOP?
+        ◦ Object-Oriented Programming (OOP) is a programming paradigm based on the concept of "objects," which can contain data in the form of fields and code in the form of procedures.
+        ◦ What are the principles of OOP?
+        ◦ The principles of OOP are encapsulation, inheritance, polymorphism, and abstraction.
+        ◦ What is encapsulation?
+        ◦ Encapsulation is the bundling of data and methods that operate on the data into a single unit, preventing direct access to the data from outside the unit and only allowing access through defined methods.
+        ◦ Explain inheritance.
+        ◦ Inheritance is the mechanism by which a new class inherits properties and behaviors from an existing class. It promotes code reusability and establishes a parent-child relationship between classes.
+        ◦ What is polymorphism?
+        ◦ Polymorphism is the ability of objects of different classes to respond to the same message or method call in different ways. It allows objects of different types to be treated as objects of a common superclass.
+        ◦ What is abstraction?
+        ◦ Abstraction is the process of hiding the implementation details and showing only the essential features of an object. It helps in reducing programming complexity and effort.
+        ◦ What is a class in Java?
+        ◦ A class in Java is a blueprint or template for creating objects. It defines the data and methods that will be present in objects of that class.
+        ◦ Explain an object in Java.
+        ◦ An object in Java is an instance of a class. It has state (fields) and behavior (methods). Objects are created using the new keyword followed by a constructor.
+        ◦ What is a constructor?
+        ◦ A constructor in Java is a special method that is invoked when an object is instantiated. It initializes the newly created object.
+        ◦ Differentiate between a constructor and a method.
+        ◦ Constructors are used to initialize objects, while methods are used to perform actions or operations on objects.
+        ◦ Constructors have the same name as the class, while methods have unique names.
+        ◦ Constructors cannot return a value, while methods can.
+        ◦ What is method overloading?
+        ◦ Method overloading is the ability to define multiple methods in a class with the same name but different parameters. Java determines which method to execute based on the number and type of parameters passed.
+        ◦ Explain method overriding.
+        ◦ Method overriding occurs when a subclass provides a specific implementation of a method that is already defined in its superclass. The method signature in the subclass must match the method signature in the superclass.
+        ◦ What is the super keyword used for?
+        ◦ The super keyword in Java is used to refer to the superclass of the current object. It can be used to call the superclass's constructor or methods.
+        ◦ What is the this keyword used for?
+        ◦ The this keyword in Java is used to refer to the current object within a method or constructor. It can be used to access instance variables or invoke other constructors of the same class.
+        ◦ What is the difference between this and super keywords?
+        ◦ The this keyword is used to refer to the current object, while the super keyword is used to refer to the superclass of the current object.
+        ◦ this is used to differentiate between instance variables and parameters with the same name, while super is used to call superclass constructors or methods.
+        ◦ Explain method hiding.
+        ◦ Method hiding occurs when a subclass defines a static method with the same signature as a static method in its superclass. The method in the subclass hides the method in the superclass.
+        ◦ What is composition in Java?
+        ◦ Composition is a design principle in which a class contains an instance of another class as one of its fields. It represents a "has-a" relationship between classes.
+        ◦ What is aggregation in Java?
+        ◦ Aggregation is a special form of association where a class contains references to other classes as part of its state. It represents a "whole-part" relationship between classes.
+        ◦ Explain the instanceof operator.
+        ◦ The instanceof operator in Java is used to test whether an object is an instance of a particular class or interface. It returns true if the object is an instance of the specified type, otherwise false.
+        ◦ What is method chaining?
+        ◦ Method chaining is a programming technique where multiple method calls are chained together in a single statement. Each method returns an object, allowing the next method to be called on the returned object.
+        ◦ What is an abstract class?
+        ◦ An abstract class in Java is a class that cannot be instantiated directly and may contain abstract methods, which are declared but not implemented. It serves as a blueprint for other classes to extend and implement.
+        ◦ Can an abstract class have a constructor?
+        ◦ Yes, an abstract class can have a constructor. It is invoked when a concrete subclass is instantiated and is responsible for initializing the state of the abstract class.
+        ◦ What is an interface?
+        ◦ An interface in Java is a reference type that can contain only abstract methods, default methods, static methods, constant variables, and nested types. It defines a contract for classes that implement it.
+        ◦ Explain the difference between abstract class and interface.
+        ◦ An abstract class can contain both abstract and concrete methods, while an interface can only contain abstract methods.
+        ◦ A class can implement multiple interfaces, but it can extend only one abstract class.
+        ◦ An abstract class can have instance variables, while interfaces cannot.
+        ◦ What is a marker interface?
+        ◦ A marker interface in Java is an interface that does not contain any methods. It is used to indicate to the compiler or runtime environment that a class implementing the interface has some special behavior.
+        ◦ What is a nested class?
+        ◦ A nested class in Java is a class that is defined within another class. It can be static or non-static (inner class) and has access to the members of the enclosing class.
+        ◦ Explain static nested classes.
+        ◦ Static nested classes are nested classes that are declared as static. They do not have access to the instance variables and methods of the enclosing class unless they are also static.
+        ◦ What is an inner class?
+        ◦ An inner class in Java is a non-static nested class that is defined within another class. It has access to the instance variables and methods of the enclosing class.
+        ◦ What is an anonymous class?
+        ◦ An anonymous class in Java is a class without a name that is defined and instantiated in a single expression. It is often used for one-time use and can implement interfaces or extend classes.
+        ◦ What is method local inner class?
+        ◦ A method local inner class in Java is a class that is defined within a method. It has access to the variables and parameters of the enclosing method but cannot be accessed from outside the method.
+        ◦ What is a package?
+        ◦ A package in Java is a mechanism for organizing classes and interfaces into namespaces. It helps in avoiding naming conflicts and provides access control.
+        ◦ Explain access modifiers in Java.
+        ◦ Access modifiers in Java are keywords that specify the accessibility of classes, methods, and variables. There are four types of access modifiers: public, protected, default (no modifier), and private.
+        ◦ What is the default access modifier?
+        ◦ The default access modifier in Java is used when no access modifier is specified. It allows access within the same package but restricts access from outside the package.
+        ◦ What is the final keyword used for?
+        ◦ The final keyword in Java is used to restrict the further modification of classes, methods, and variables. It can make a class not extendable, a method not overrideable, or a variable constant.
+        ◦ Explain method signature.
+        ◦ The method signature in Java consists of the method name and the parameter types (and their order). It does not include the return type or any modifiers.
+        ◦ What is method visibility?
+        ◦ Method visibility refers to the accessibility of methods from other classes or packages. It is controlled by access modifiers such as public, protected, default, and private.
+        ◦ What is method scope?
+        ◦ Method scope refers to the portion of code where a method can be invoked or accessed. It is determined by the access modifiers and where the method is defined.
+        ◦ What is method hiding in Java?
+        ◦ Method hiding occurs when a subclass defines a static method with the same signature as a static method in its superclass. The method in the subclass hides the method in the superclass.
+        ◦ Explain method polymorphism.
+        ◦ Method polymorphism in Java refers to the ability of a method to take different forms depending on the object that invokes it. It is achieved through method overriding and method overloading.
+        ◦ What is method overriding in Java?
+        ◦ Method overriding occurs when a subclass provides a specific implementation of a method that is already defined in its superclass. The method signature in the subclass must match the method signature in the superclass.
+        ◦ What is method overloading in Java?
+        ◦ Method overloading in Java is the ability to define multiple methods in a class with the same name but different parameters. Java determines which method to execute based on the number and type of parameters passed.
+        ◦ What is constructor chaining?
+        ◦ Constructor chaining in Java refers to the process of one constructor calling another constructor in the same class or its superclass using the this() or super() keyword.
+        ◦ Can constructors be overloaded?
+        ◦ Yes, constructors in Java can be overloaded. This means that a class can have multiple constructors with different parameter lists.
+        ◦ Can constructors be inherited?
+        ◦ Constructors are not inherited in Java. However, a subclass constructor can invoke a constructor from its superclass using the super() keyword to initialize the inherited members.
+        ◦ What is a constructor?
+        ◦ A constructor in Java is a special method that is automatically called when an object is created. It is used to initialize the object's state.
+        ◦ What is the purpose of the this keyword in Java constructors?
+        ◦ The this keyword in Java constructors is used to refer to the current object being initialized. It can be used to differentiate between instance variables and parameters with the same name.
+        ◦ What is the purpose of the super keyword in Java constructors?
+        ◦ The super keyword in Java constructors is used to invoke a constructor from the superclass. It is used to initialize the inherited members of the subclass.
+        ◦ What is the purpose of the static keyword in Java?
+        ◦ The static keyword in Java is used to declare members (variables and methods) that belong to the class rather than individual objects. Static members are shared among all instances of the class.
+        ◦ Can static methods access non-static variables?
+        ◦ No, static methods cannot access non-static variables directly. They can only access static variables or other static methods.
+        ◦ Can static methods be overridden?
+        ◦ Static methods cannot be overridden in Java. They can only be hidden by subclass methods with the same signature.
+        ◦ What is the purpose of the final keyword in Java?
+        ◦ The final keyword in Java is used to restrict the further modification of classes, methods, and variables. It can make a class not extendable, a method not overrideable, or a variable constant.
+        ◦ Can a final class be extended?
+        ◦ No, a final class cannot be extended in Java. Any attempt to extend a final class will result in a compilation error.
+        ◦ Can a final method be overridden?
+        ◦ No, a final method cannot be overridden in Java. Any attempt to override a final method will result in a compilation error.
+        ◦ Can final variables be modified?
+        ◦ No, final variables cannot be modified after they are initialized. They act as constants and their values cannot be changed.
+        ◦ What is the purpose of the abstract keyword in Java?
+        ◦ The abstract keyword in Java is used to declare abstract classes and methods. An abstract class cannot be instantiated, and an abstract method must be implemented by its subclasses.
+        ◦ Can an abstract class have a constructor?
+        ◦ Yes, an abstract class can have a constructor. It is invoked when a concrete subclass is instantiated and is responsible for initializing the state of the abstract class.
+        ◦ Can an abstract class have non-abstract methods?
+        ◦ Yes, an abstract class can have both abstract and non-abstract (concrete) methods. Concrete methods provide default implementations that can be overridden by subclasses.
+        ◦ Can an interface extend another interface?
+        ◦ Yes, an interface in Java can extend one or more other interfaces using the extends keyword. This allows the sub-interface to inherit the methods of the super-interface(s).
+        ◦ Can an interface implement another interface?
+        ◦ No, an interface in Java cannot implement another interface. However, a class that implements an interface can implement multiple interfaces.
+        ◦ Can an interface have constructors?
+        ◦ No, an interface in Java cannot have constructors. Interfaces only define methods and constants that implementing classes must provide.
+        ◦ Can an interface have fields?
+        ◦ Yes, an interface in Java can have constant fields, which are implicitly public, static, and final. These fields must be initialized with a value.
+        ◦ What is the purpose of the default keyword in interfaces?
+        ◦ The default keyword in interfaces is used to define default implementations for methods. Classes that implement the interface can use the default implementation or provide their own implementation.
+        ◦ Can an interface have static methods?
+        ◦ Yes, an interface in Java can have static methods. Static methods in interfaces can be invoked using the interface name without requiring an instance of the implementing class.
+        ◦ What is the purpose of the private access modifier in Java?
+        ◦ The private access modifier in Java is used to restrict access to members (variables and methods) within the same class. Private members cannot be accessed from outside the class.
+        ◦ Can a private method be overridden?
+        ◦ No, a private method cannot be overridden in Java because it is not visible to subclasses. It is accessible only within the class in which it is defined.
+        ◦ Can a private method be inherited?
+        ◦ Yes, a private method can be inherited in Java, but it cannot be accessed directly by subclasses. However, it can be invoked indirectly through public or protected methods of the superclass.
+        ◦ What is method hiding in Java?
+        ◦ Method hiding occurs when a subclass defines a static method with the same signature as a static method in its superclass. The method in the subclass hides the method in the superclass.
+        ◦ What is dynamic method dispatch?
+        ◦ Dynamic method dispatch in Java refers to the mechanism by which the correct version of an overridden method is called at runtime based on the type of the object.
+        ◦ What is the difference between static and dynamic method dispatch?
+        ◦ Static method dispatch (or static binding) occurs at compile time and involves calling the method based on the reference type, while dynamic method dispatch (or dynamic binding) occurs at runtime and involves calling the method based on the object type.
+        ◦ What is the instanceof operator used for?
+        ◦ The instanceof operator in Java is used to test whether an object is an instance of a particular class or interface. It returns true if the object is an instance of the specified type, otherwise false.
+        ◦ What is the purpose of the finalize() method in Java?
+        ◦ The finalize() method in Java is called by the garbage collector before an object is reclaimed by the memory management system. It can be overridden to perform cleanup operations on the object before it is destroyed.
+        ◦ What is garbage collection in Java?
+        ◦ Garbage collection in Java is the process by which the JVM automatically deallocates memory that is no longer in use by any part of the program. It helps in managing memory efficiently and avoiding memory leaks.
+        ◦ How does garbage collection work in Java?
+        ◦ Garbage collection in Java works by identifying objects that are no longer reachable or referenced by any part of the program and reclaiming the memory occupied by those objects.
+        ◦ What is the finalize() method?
+        ◦ The finalize() method in Java is a method of the Object class that is called by the garbage collector before an object is reclaimed by the memory management system. It can be overridden to perform cleanup operations on the object before it is destroyed.
+        ◦ Can the finalize() method be called explicitly?
+        ◦ No, the finalize() method cannot be called explicitly by the programmer. It is automatically called by the garbage collector before an object is garbage collected.
+        ◦ What is the purpose of the clone() method in Java?
+        ◦ The clone() method in Java is used to create a copy of an object. It returns a new object that is a copy of the original object. The clone() method is declared in the Cloneable interface.
+        ◦ How is the clone() method implemented in Java?
+        ◦ The clone() method in Java is implemented by creating a new object of the same class and copying the values of all instance variables from the original object to the new object.
+        ◦ What is shallow cloning?
+        ◦ Shallow cloning is the process of creating a new object that is a copy of the original object, but only the top-level fields are copied. If the object contains references to other objects, the references are copied, but not the objects themselves.
+        ◦ What is deep cloning?
+        ◦ Deep cloning is the process of creating a new object that is a complete and independent copy of the original object, including all nested objects. Each nested object is recursively copied to ensure that the entire object hierarchy is duplicated.
+        ◦ How do you prevent a class from being subclassed in Java?
+        ◦ To prevent a class from being subclassed in Java, you can declare the class as final. This prevents other classes from extending it.
+        ◦ How do you prevent a method from being overridden in Java?
+        ◦ To prevent a method from being overridden in Java, you can declare the method as final. This prevents subclasses from providing a different implementation of the method.
+        ◦ How do you prevent a variable from being modified in Java?
+        ◦ To prevent a variable from being modified in Java, you can declare the variable as final. This makes the variable a constant, and its value cannot be changed after initialization.
+        ◦ What is the purpose of the transient keyword in Java?
+        ◦ The transient keyword in Java is used to indicate that a field should not be serialized when the object is written to a file or transmitted over a network. Transient fields are excluded from the serialization process.
+        ◦ What is the purpose of the volatile keyword in Java?
+        ◦ The volatile keyword in Java is used to indicate that a variable's value may be modified by multiple threads simultaneously. It ensures that changes to the variable are immediately visible to other threads.
+        ◦ What is synchronization in Java?
+        ◦ Synchronization in Java is the process of controlling access to shared resources or critical sections of code by multiple threads to prevent race conditions and ensure data consistency.
+        ◦ What is a thread in Java?
+        ◦ A thread in Java is the smallest unit of execution that can independently execute a set of instructions. Java supports multithreading, allowing multiple threads to run concurrently within a single program.
+        ◦ How do you create a thread in Java?
+        ◦ There are two ways to create a thread in Java: by extending the Thread class and overriding its run() method, or by implementing the Runnable interface and passing it to a Thread constructor.
+        ◦ What is the Thread class in Java?
+        ◦ The Thread class in Java is a class provided by the Java API for creating and managing threads. It provides methods for starting, stopping, pausing, and resuming threads, as well as for controlling thread priority and synchronization.
+        ◦ What is the Runnable interface in Java?
+        ◦ The Runnable interface in Java is a functional interface that represents a task that can be executed by a thread. It defines a single abstract method, run(), which contains the code to be executed by the thread.
+        ◦ What is the difference between extending the Thread class and implementing the Runnable interface for creating threads?
+        ◦ Extending the Thread class involves creating a new subclass of Thread and overriding its run() method. Implementing the Runnable interface involves implementing the run() method in a separate class and passing it to a Thread constructor.
+        ◦ What is a daemon thread?
+        ◦ A daemon thread in Java is a thread that runs in the background and does not prevent the JVM from exiting when all non-daemon threads have terminated. Daemon threads are typically used for tasks that can be safely abandoned if the program terminates.
+        ◦ How do you set a thread as a daemon thread in Java?
+        ◦ You can set a thread as a daemon thread by calling the setDaemon(true) method on the thread object before starting the thread. This marks the thread as a daemon thread, and it will run in the background.
+        ◦ What is thread synchronization?
+        ◦ Thread synchronization in Java is the process of coordinating the execution of multiple threads to ensure that they do not interfere with each other when accessing shared resources or critical sections of code.
+        ◦ What is the purpose of the synchronized keyword in Java?
+        ◦ The synchronized keyword in Java is used to create synchronized blocks of code or methods that can be accessed by only one thread at a time. It prevents race conditions and ensures data consistency in multithreaded programs.
+        ◦ What is a deadlock in Java?
+        ◦ A deadlock in Java occurs when two or more threads are blocked indefinitely, each waiting for the other to release a resource that it needs. Deadlocks can occur when locks are not acquired and released in the correct order.
+        ◦ How do you prevent deadlocks in Java?
+        ◦ Deadlocks in Java can be prevented by following best practices for acquiring and releasing locks, using timeout mechanisms for locks, avoiding nested locks, and using higher-level concurrency utilities provided by the Java API.
+        ◦ What is thread safety?
+        ◦ Thread safety in Java refers to the property of a class or method that ensures it behaves correctly when accessed by multiple threads simultaneously. Thread-safe classes and methods are designed to prevent race conditions and data corruption.
+        ◦ What is the volatile keyword used for in Java?
+        ◦ The volatile keyword in Java is used to indicate that a variable's value may be modified by multiple threads simultaneously. It ensures that changes to the variable are immediately visible to other threads.
+        ◦ What is the purpose of the wait() method in Java?
+        ◦ The wait() method in Java is used to make a thread wait until another thread invokes the notify() or notifyAll() method on the same object. It is typically used for inter-thread communication and synchronization.
+        ◦ What is the purpose of the notify() method in Java?
+        ◦ The notify() method in Java is used to wake up a single thread that is waiting on the same object by calling the wait() method. It is typically used for inter-thread communication and synchronization.
+        ◦ What is the purpose of the notifyAll() method in Java?
+        ◦ The notifyAll() method in Java is used to wake up all threads that are waiting on the same object by calling the wait() method. It is typically used for inter-thread communication and synchronization.
+        ◦ What is the purpose of the yield() method in Java?
+        ◦ The yield() method in Java is used to temporarily pause the execution of the current thread and give other threads of the same priority a chance to execute. It is a hint to the scheduler that the thread is willing to yield its current use of the CPU.
+        ◦ What is the purpose of the sleep() method in Java?
+        ◦ The sleep() method in Java is used to pause the execution of the current thread for a specified amount of time. It is typically used for introducing delays or for timing purposes.
+        ◦ What is the purpose of the interrupt() method in Java?
+        ◦ The interrupt() method in Java is used to interrupt the execution of a thread by setting its interrupt status. It can be used to gracefully terminate a thread or to signal it to stop its execution.
+        ◦ What is a race condition?
+        ◦ A race condition in Java occurs when the behavior of a program depends on the relative timing or interleaving of multiple threads, and the outcome is unpredictable or incorrect. Race conditions can lead to bugs and data corruption in multithreaded programs.
+        ◦ What is a synchronized block in Java?
+        ◦ A synchronized block in Java is a block of code that is executed by only one thread at a time, preventing concurrent access to shared resources or critical sections of code. It is synchronized on a specific object or class.
+        ◦ What is the purpose of the volatile keyword in Java?
+        ◦ The volatile keyword in Java is used to indicate that a variable's value may be modified by multiple threads simultaneously. It ensures that changes to the variable are immediately visible to other threads.
+        ◦ What is the difference between synchronized and volatile in Java?
+        ◦ The synchronized keyword in Java is used to create synchronized blocks of code or methods that can be accessed by only one thread at a time. The volatile keyword is used to indicate that a variable's value may be modified by multiple threads simultaneously.
+        ◦ What is the purpose of the ThreadLocal class in Java?
+        ◦ The ThreadLocal class in Java is used to create thread-local variables, which are variables that have separate copies for each thread. Thread-local variables are typically used to store per-thread data without the need for synchronization.
+        ◦ What is the purpose of the Executor framework in Java?
+        ◦ The Executor framework in Java is a higher-level concurrency utility that simplifies the task of executing asynchronous tasks and managing thread pools. It provides a standard way to execute tasks concurrently and manage thread lifecycle.
+        ◦ What is the purpose of the Callable interface in Java?
+        ◦ The Callable interface in Java is a functional interface that represents a task that can be executed asynchronously and return a result. It is similar to the Runnable interface, but it can throw checked exceptions and return a result.
+        ◦ What is the purpose of the Future interface in Java?
+        ◦ The Future interface in Java is used to represent the result of an asynchronous computation that may not be available immediately. It provides methods for checking if the computation is complete, canceling the computation, and retrieving the result.
+        ◦ What is the purpose of the ForkJoinPool class in Java?
+        ◦ The ForkJoinPool class in Java is a special-purpose ExecutorService implementation that is optimized for dividing work among multiple threads using a divide-and-conquer strategy. It is typically used for parallelizing recursive algorithms.
+        ◦ What is the purpose of the CountDownLatch class in Java?
+        ◦ The CountDownLatch class in Java is a synchronization aid that allows one or more threads to wait until a set of operations being performed in other threads completes. It is initialized with a count, and each call to countDown() decrements the count.
+        ◦ What is the purpose of the CyclicBarrier class in Java?
+        ◦ The CyclicBarrier class in Java is a synchronization aid that allows a group of threads to wait until a set of operations being performed in other threads completes. It is initialized with a count and a barrier action, and each call to await() decrements the count.
+        ◦ What is the purpose of the Semaphore class in Java?
+        ◦ The Semaphore class in Java is a synchronization aid that allows a fixed number of threads to access a shared resource or perform a certain task concurrently. It is initialized with a count, and each call to acquire() decrements the count, while each call to release() increments it.
+        ◦ What is the purpose of the Lock interface in Java?
+        ◦ The Lock interface in Java is a synchronization aid that provides more flexible and sophisticated ways to manage locks than the built-in synchronized blocks. It allows finer-grained control over the locking and unlocking of resources.
+        ◦ What is the purpose of the ReentrantLock class in Java?
+        ◦ The ReentrantLock class in Java is an implementation of the Lock interface that provides reentrant mutual exclusion. It allows a thread to acquire the lock multiple times without deadlocking and supports various locking mechanisms, such as fairness and interruptibility.
+        ◦ What is the purpose of the ReadWriteLock interface in Java?
+        ◦ The ReadWriteLock interface in Java is a synchronization aid that provides separate locks for reading and writing operations on a shared resource. It allows multiple threads to read the resource concurrently but only one thread to write to the resource at a time.
+        ◦ What is the purpose of the ReadWriteLock interface in Java?
+        ◦ The ReadWriteLock interface in Java is a synchronization aid that provides separate locks for reading and writing operations on a shared resource. It allows multiple threads to read the resource concurrently but only one thread to write to the resource at a time.
+        ◦ What is a lambda expression in Java?
+        ◦ A lambda expression in Java is a concise way to represent an anonymous function or method that can be passed as an argument to other methods or stored in variables. It is used to implement functional interfaces with a single abstract method.
+        ◦ What is a functional interface in Java?
+        ◦ A functional interface in Java is an interface that contains only one abstract method, known as the functional method. Functional interfaces are used to represent lambdas or method references, and they can be annotated with the @FunctionalInterface annotation.
+        ◦ What is the purpose of the Predicate interface in Java?
+        ◦ The Predicate interface in Java is a functional interface that represents a predicate, which is a boolean-valued function that tests whether a given input satisfies a certain condition. It defines a single method, test(), that returns a boolean value.
+        ◦ What is the purpose of the Consumer interface in Java?
+        ◦ The Consumer interface in Java is a functional interface that represents an operation that takes a single input and returns no result. It defines a single method, accept(), that takes an argument of type T and performs some operation on it.
+        ◦ What is the purpose of the Function interface in Java?
+        ◦ The Function interface in Java is a functional interface that represents a function that takes an argument of type T and returns a result of type R. It defines a single method, apply(), that takes an argument of type T and returns a result of type R.
+        ◦ What is the purpose of the Supplier interface in Java?
+        ◦ The Supplier interface in Java is a functional interface that represents a supplier of results. It defines a single method, get(), that returns a result of type T. Suppliers are typically used to generate or supply values lazily.
+        ◦ What is the purpose of the Optional class in Java?
+        ◦ The Optional class in Java is a container object that may or may not contain a non-null value. It is used to represent optional values in a type-safe manner and avoid NullPointerExceptions.
+        ◦ What is the purpose of the Stream API in Java?
+        ◦ The Stream API in Java is a new addition in Java 8 that provides a fluent and functional way to process collections of data. It allows developers to perform operations such as filtering, mapping, sorting, and aggregating on collections in a concise and expressive manner.
+        ◦ What is a stream in Java?
+        ◦ A stream in Java is a sequence of elements that supports various operations to perform computation on those elements. Streams are created from collections, arrays, or I/O channels and can be processed in a functional style using methods such as filter(), map(), reduce(), and collect().
+        ◦ What are intermediate operations in Java streams?
+        ◦ Intermediate operations in Java streams are operations that transform or filter the elements of a stream and return a new stream as a result. Examples of intermediate operations include filter(), map(), sorted(), and distinct().
+        ◦ What are terminal operations in Java streams?
+        ◦ Terminal operations in Java streams are operations that produce a result or a side effect and terminate the stream. Examples of terminal operations include forEach(), reduce(), collect(), and count().
+        ◦ What is lazy evaluation in Java streams?
+        ◦ Lazy evaluation in Java streams refers to the characteristic of streams where intermediate operations are not evaluated until a terminal operation is invoked. This allows for more efficient processing of large streams and enables optimization by the stream implementation.
+        ◦ What is the purpose of the flatMap() method in Java streams?
+        ◦ The flatMap() method in Java streams is used to flatten a stream of streams into a single stream. It takes a function that maps each element of the stream to another stream and then concatenates the resulting streams into a single stream.
+        ◦ What is the purpose of the collect() method in Java streams?
+        ◦ The collect() method in Java streams is used to accumulate the elements of a stream into a mutable result container, such as a List, Set, or Map. It takes a Collector as an argument, which specifies how the elements should be collected.
+        ◦ What is the purpose of the reduce() method in Java streams?
+        ◦ The reduce() method in Java streams is used to combine the elements of a stream into a single result by applying a binary operation repeatedly. It takes an initial value and a BinaryOperator as arguments and returns the reduced value.
+        ◦ What is the purpose of the parallel() method in Java streams?
+        ◦ The parallel() method in Java streams is used to convert a sequential stream into a parallel stream. Parallel streams allow the processing of elements to be distributed across multiple threads, potentially improving performance on multi-core systems.
+        ◦ What is the purpose of the findFirst() method in Java streams?
+        ◦ The findFirst() method in Java streams is used to find the first element of a stream that matches a given predicate. It returns an Optional containing the first matching element, or an empty Optional if no matching element is found.
+        ◦ What is the purpose of the findAny() method in Java streams?
+        ◦ The findAny() method in Java streams is used to find any element of a stream that matches a given predicate. It returns an Optional containing any matching element, or an empty Optional if no matching element is found.
+        ◦ What is the purpose of the allMatch() method in Java streams?
+        ◦ The allMatch() method in Java streams is used to check whether all elements of a stream match a given predicate. It returns true if all elements match the predicate, otherwise false.
+        ◦ What is the purpose of the anyMatch() method in Java streams?
+        ◦ The anyMatch() method in Java streams is used to check whether any element of a stream matches a given predicate. It returns true if any element matches the predicate, otherwise false.
+        ◦ What is the purpose of the noneMatch() method in Java streams?
+        ◦ The noneMatch() method in Java streams is used to check whether no elements of a stream match a given predicate. It returns true if no elements match the predicate, otherwise false.
+        ◦ What is the purpose of the forEach() method in Java streams?
+        ◦ The forEach() method in Java streams is used to perform an action for each element of a stream. It takes a Consumer as an argument, which specifies the action to be performed on each element.
+        ◦ What is the purpose of the map() method in Java streams?
+        ◦ The map() method in Java streams is used to transform each element of a stream using a given function. It returns a new stream containing the results of applying the function to each element of the original stream.
+        ◦ What is the purpose of the filter() method in Java streams?
+        ◦ The filter() method in Java streams is used to select elements from a stream that match a given predicate. It returns a new stream containing only the elements that satisfy the predicate.
+        ◦ What is the purpose of the sorted() method in Java streams?
+        ◦ The sorted() method in Java streams is used to sort the elements of a stream in natural order or using a custom Comparator. It returns a new stream containing the sorted elements.
+        ◦ What is the purpose of the distinct() method in Java streams?
+        ◦ The distinct() method in Java streams is used to remove duplicate elements from a stream. It returns a new stream containing only unique elements, as determined by the equals() method.
+        ◦ What is the purpose of the limit() method in Java streams?
+        ◦ The limit() method in Java streams is used to limit the size of a stream to a specified number of elements. It returns a new stream containing only the first n elements of the original stream.
+        ◦ What is the purpose of the skip() method in Java streams?
+        ◦ The skip() method in Java streams is used to skip a specified number of elements from the beginning of a stream. It returns a new stream containing the remaining elements of the original stream after skipping the specified number of elements.
+        ◦ What is the purpose of the toArray() method in Java streams?
+        ◦ The toArray() method in Java streams is used to collect the elements of a stream into an array. It returns an array containing the elements of the stream in the order they were encountered.
+        ◦ What is the purpose of the concat() method in Java streams?
+        ◦ The concat() method in Java streams is used to concatenate two streams into a single stream. It returns a new stream containing all the elements of the first stream followed by all the elements of the second stream.
+        ◦ What is the purpose of the iterate() method in Java streams?
+        ◦ The iterate() method in Java streams is used to generate an infinite stream of elements by repeatedly applying a function to the previous element. It takes an initial value and a unary operator as arguments and returns a new stream containing the generated elements.
+        ◦ What is the purpose of the generate() method in Java streams?
+        ◦ The generate() method in Java streams is used to generate an infinite stream of elements by repeatedly calling a supplier function. It takes a Supplier as an argument and returns a new stream containing the generated elements.
+        ◦ What is the purpose of the of() method in Java streams?
+        ◦ The of() method in Java streams is used to create a stream containing a fixed number of elements. It takes a variable number of arguments and returns a new stream containing the specified elements.
+        ◦ What is the purpose of the empty() method in Java streams?
+        ◦ The empty() method in Java streams is used to create an empty stream with no elements. It returns a new empty stream that can be used as a placeholder or base stream for further operations.
+        ◦ What is the purpose of the builder() method in Java streams?
+        ◦ The builder() method in Java streams is used to create a Stream.Builder for building a stream of elements incrementally. It returns a new builder that can be used to add elements to the stream and then build the final stream.
+        ◦ What is the purpose of the chars() method in Java streams?
+        ◦ The chars() method in Java streams is used to create a stream of int values representing the Unicode code points of the characters in a CharSequence. It returns an IntStream containing the code points of the characters.
+        ◦ What is the purpose of the range() method in Java streams?
+        ◦ The range() method in Java streams is used to create a sequential stream of int values in a specified range. It takes a starting value and an ending value (exclusive) as arguments and returns an IntStream containing the values in the range.
+        ◦ What is the purpose of the rangeClosed() method in Java streams?
+        ◦ The rangeClosed() method in Java streams is used to create a sequential stream of int values in a specified range, including both the start and end values. It takes a starting value and an ending value as arguments and returns an IntStream containing the values in the range.
+        ◦ What is the purpose of the empty() method in Java streams?
+        ◦ The empty() method in Java streams is used to create an empty stream with no elements. It returns a new empty stream that can be used as a placeholder or base stream for further operations.
+        ◦ What is the purpose of the iterator() method in Java streams?
+        ◦ The iterator() method in Java streams is used to iterate over the elements of a stream sequentially. It returns an Iterator that can be used to traverse the elements of the stream one by one.
+        ◦ What is the purpose of the spliterator() method in Java streams?
+        ◦ The spliterator() method in Java streams is used to create a Spliterator for traversing the elements of a stream in parallel. It returns a Spliterator that can be used to split the elements of the stream into multiple parts for concurrent processing.
+        ◦ What is the purpose of the parallel() method in Java streams?
+        ◦ The parallel() method in Java streams is used to convert a sequential stream into a parallel stream. Parallel streams allow the processing of elements to be distributed across multiple threads, potentially improving performance on multi-core systems.
+        ◦ What is the purpose of the sequential() method in Java streams?
+        ◦ The sequential() method in Java streams is used to convert a parallel stream into a sequential stream. Sequential streams process elements one by one in the encounter order, whereas parallel streams process elements concurrently.
+        ◦ What is the purpose of the unordered() method in Java streams?
+        ◦ The unordered() method in Java streams is used to indicate that the elements of a stream are unordered and can be processed in any order. It returns a new stream with the unordered characteristic.
+        ◦ What is the purpose of the distinct() method in Java streams?
+        ◦ The distinct() method in Java streams is used to remove duplicate elements from a stream. It returns a new stream containing only unique elements, as determined by the equals() method.
+        ◦ What is the purpose of the sorted() method in Java streams?
+        ◦ The sorted() method in Java streams is used to sort the elements of a stream in natural order or using a custom Comparator. It returns a new stream containing the sorted elements.
+        ◦ What is the purpose of the limit() method in Java streams?
+        ◦ The limit() method in Java streams is used to limit the size of a stream to a specified number of elements. It returns a new stream containing only the first n elements of the original stream.
+        ◦ What is the purpose of the skip() method in Java streams?
+        ◦ The skip() method in Java streams is used to skip a specified number of elements from the beginning of a stream. It returns a new stream containing the remaining elements of the original stream after skipping the specified number of elements.
+        ◦ What is the purpose of the toArray() method in Java streams?
+        ◦ The toArray() method in Java streams is used to collect the elements of a stream into an array. It returns an array containing the elements of the stream in the order they were encountered.
+        ◦ What is the purpose of the forEach() method in Java streams?
+        ◦ The forEach() method in Java streams is used to perform an action for each element of a stream. It takes a Consumer as an argument, which specifies the action to be performed on each element.
+        ◦ What is the purpose of the map() method in Java streams?
+        ◦ The map() method in Java streams is used to transform each element of a stream using a given function. It returns a new stream containing the results of applying the function to each element of the original stream.
+        ◦ What is the purpose of the filter() method in Java streams?
+        ◦ The filter() method in Java streams is used to select elements from a stream that match a given predicate. It returns a new stream containing only the elements that satisfy the predicate.
+        ◦ What is the purpose of the flatMap() method in Java streams?
+        ◦ The flatMap() method in Java streams is used to flatten a stream of streams into a single stream. It takes a function that maps each element of the stream to another stream and then concatenates the resulting streams into a single stream.
+        ◦ What is the purpose of the reduce() method in Java streams?
+        ◦ The reduce() method in Java streams is used to combine the elements of a stream into a single result by applying a binary operation repeatedly. It takes an initial value and a BinaryOperator as arguments and returns the reduced value.
+        ◦ What is the purpose of the collect() method in Java streams?
+        ◦ The collect() method in Java streams is used to accumulate the elements of a stream into a mutable result container, such as a List, Set, or Map. It takes a Collector as an argument, which specifies how the elements should be collected.
+        ◦ What is the purpose of the allMatch() method in Java streams?
+        ◦ The allMatch() method in Java streams is used to check whether all elements of a stream match a given predicate. It returns true if all elements match the predicate, otherwise false.
+        ◦ What is the purpose of the anyMatch() method in Java streams?
+        ◦ The anyMatch() method in Java streams is used to check whether any element of a stream matches a given predicate. It returns true if any element matches the predicate, otherwise false.
+        ◦ What is the purpose of the noneMatch() method in Java streams?
+        ◦ The noneMatch() method in Java streams is used to check whether no elements of a stream match a given predicate. It returns true if no elements match the predicate, otherwise false.
+        ◦ What is the purpose of the findFirst() method in Java streams?
+        ◦ The findFirst() method in Java streams is used to find the first element of a stream that matches a given predicate. It returns an Optional containing the first matching element, or an empty Optional if no matching element is found.
+        ◦ What is the purpose of the findAny() method in Java streams?
+        ◦ The findAny() method in Java streams is used to find any element of a stream that matches a given predicate. It returns an Optional containing any matching element, or an empty Optional if no matching element is found.
+        ◦ What is the purpose of the count() method in Java streams?
+        ◦ The count() method in Java streams is used to count the number of elements in a stream. It returns the count as a long value.
+        ◦ What is the purpose of the max() method in Java streams?
+        ◦ The max() method in Java streams is used to find the maximum element of a stream according to the natural order or a custom Comparator. It returns an Optional containing the maximum element, or an empty Optional if the stream is empty.
+        ◦ What is the purpose of the min() method in Java streams?
+        ◦ The min() method in Java streams is used to find the minimum element of a stream according to the natural order or a custom Comparator. It returns an Optional containing the minimum element, or an empty Optional if the stream is empty.
+        ◦ What is the purpose of the sum() method in Java streams?
+        ◦ The sum() method in Java streams is used to calculate the sum of the elements of a numeric stream. It returns the sum as a primitive value of the same type as the elements of the stream.
+        ◦ What is the purpose of the average() method in Java streams?
+        ◦ The average() method in Java streams is used to calculate the average of the elements of a numeric stream. It returns the average as an OptionalDouble, which may be empty if the stream is empty.
+        ◦ What is the purpose of the count() method in Java streams?
+        ◦ The count() method in Java streams is used to count the number of elements in a stream. It returns the count as a long value.
+        ◦ What is the purpose of the max() method in Java streams?
+        ◦ The max() method in Java streams is used to find the maximum element of a stream according to the natural order or a custom Comparator. It returns an Optional containing the maximum element, or an empty Optional if the stream is empty.
+        ◦ What is the purpose of the min() method in Java streams?
+        ◦ The min() method in Java streams is used to find the minimum element of a stream according to the natural order or a custom Comparator. It returns an Optional containing the minimum element, or an empty Optional if the stream is empty.
+        ◦ What is the purpose of the sum() method in Java streams?
+        ◦ The sum() method in Java streams is used to calculate the sum of the elements of a numeric stream. It returns the sum as a primitive value of the same type as the elements of the stream.
+        ◦ What is the purpose of the average() method in Java streams?
+        ◦ The average() method in Java streams is used to calculate the average of the elements of a numeric stream. It returns the average as an OptionalDouble, which may be empty if the stream is empty.
+        ◦ What is the purpose of the groupingBy() method in Java streams?
+        ◦ The groupingBy() method in Java streams is used to group the elements of a stream by a given classifier function. It returns a Collector that collects the elements of the stream into a Map whose keys are the result of applying the classifier function to the elements.
+        ◦ What is the purpose of the partitioningBy() method in Java streams?
+        ◦ The partitioningBy() method in Java streams is used to partition the elements of a stream into two groups based on a given predicate. It returns a Collector that collects the elements of the stream into a Map whose keys are true and false, representing whether the elements satisfy the predicate.
+        ◦ What is the purpose of the joining() method in Java streams?
+        ◦ The joining() method in Java streams is used to concatenate the elements of a stream into a single String. It returns a Collector that collects the elements of the stream into a String, optionally separated by a delimiter, with an optional prefix and suffix.
+        ◦ What is the purpose of the mapping() method in Java streams?
+        ◦ The mapping() method in Java streams is used to apply a mapping function to the elements of a stream before collecting them. It returns a Collector that collects the elements of the stream after applying the mapping function.
+        ◦ What is the purpose of the reducing() method in Java streams?
+        ◦ The reducing() method in Java streams is used to perform a reduction operation on the elements of a stream using a given binary operator. It returns a Collector that collects the elements of the stream by repeatedly applying the binary operator.
+        ◦ What is the purpose of the summarizingInt() method in Java streams?
+        ◦ The summarizingInt() method in Java streams is used to calculate statistics, such as count, sum, min, max, and average, for the elements of a stream of int values. It returns a Collector that collects the statistics for the stream.
+        ◦ What is the purpose of the summarizingDouble() method in Java streams?
+        ◦ The summarizingDouble() method in Java streams is used to calculate statistics, such as count, sum, min, max, and average, for the elements of a stream of double values. It returns a Collector that collects the statistics for the stream.
+        ◦ What is the purpose of the summarizingLong() method in Java streams?
+        ◦ The summarizingLong() method in Java streams is used to calculate statistics, such as count, sum, min, max, and average, for the elements of a stream of long values. It returns a Collector that collects the statistics for the stream.
+        ◦ What is the purpose of the toList() method in Java streams?
+        ◦ The toList() method in Java streams is used to collect the elements of a stream into a List. It returns a Collector that collects the elements of the stream into a new ArrayList.
+        ◦ What is the purpose of the toSet() method in Java streams?
+        ◦ The toSet() method in Java streams is used to collect the elements of a stream into a Set. It returns a Collector that collects the elements of the stream into a new HashSet.instantiated in a single expression. It is often used for one-time use and can implement interfaces or extend classes.
+    30. What is method local inner class?
+        ◦ A method local inner class in Java is a class that is defined within a method. It has access to the variables and parameters of the enclosing method but cannot be accessed from outside the method.
+    31. What is a package?
+        ◦ A package in Java is a mechanism for organizing classes and interfaces into namespaces. It helps in avoiding naming conflicts and provides access control.
+    32. Explain access modifiers in Java.
+        ◦ Access modifiers in Java are keywords that specify the accessibility of classes, methods, and variables. There are four types of access modifiers: public, protected, default (no modifier), and private.
+    33. What is the default access modifier?
+        ◦ The default access modifier in Java is used when no access modifier is specified. It allows access within the same package but restricts access from outside the package.
+    34. What is the final keyword used for?
+        ◦ The final keyword in Java is used to restrict the further modification of classes, methods, and variables. It can make a class not extendable, a method not overrideable, or a variable constant.
+    35. Explain method signature.
+        ◦ The method signature in Java consists of the method name and the parameter types (and their order). It does not include the return type or any modifiers.
+    36. What is method visibility?
+        ◦ Method visibility refers to the accessibility of methods from other classes or packages. It is controlled by access modifiers such as public, protected, default, and private.
+    37. What is method scope?
+        ◦ Method scope refers to the portion of code where a method can be invoked or accessed. It is determined by the access modifiers and where the method is defined.
+    38. What is method hiding in Java?
+        ◦ Method hiding occurs when a subclass defines a static method with the same signature as a static method in its superclass. The method in the subclass hides the method in the superclass.
+    39. Explain method polymorphism.
+        ◦ Method polymorphism in Java refers to the ability of a method to take different forms depending on the object that invokes it. It is achieved through method overriding and method overloading.
+    40. What is method overriding in Java?
+        ◦ Method overriding occurs when a subclass provides a specific implementation of a method that is already defined in its superclass. The method signature in the subclass must match the method signature in the superclass.
+    41. What is method overloading in Java?
+        ◦ Method overloading in Java is the ability to define multiple methods in a class with the same name but different parameters. Java determines which method to execute based on the number and type of parameters passed.
+    42. What is constructor chaining?
+        ◦ Constructor chaining in Java refers to the process of one constructor calling another constructor in the same class or its superclass using the this() or super() keyword.
+    43. Can constructors be overloaded?
+        ◦ Yes, constructors in Java can be overloaded. This means that a class can have multiple constructors with different parameter lists.
+    44. Can constructors be inherited?
+        ◦ Constructors are not inherited in Java. However, a subclass constructor can invoke a constructor from its superclass using the super() keyword to initialize the inherited members.
+    45. What is a constructor?
+        ◦ A constructor in Java is a special method that is automatically called when an object is created. It is used to initialize the object's state.
+    46. What is the purpose of the this keyword in Java constructors?
+        ◦ The this keyword in Java constructors is used to refer to the current object being initialized. It can be used to differentiate between instance variables and parameters with the same name.
+    47. What is the purpose of the super keyword in Java constructors?
+        ◦ The super keyword in Java constructors is used to invoke a constructor from the superclass. It is used to initialize the inherited members of the subclass.
+    48. What is the purpose of the static keyword in Java?
+        ◦ The static keyword in Java is used to declare members (variables and methods) that belong to the class rather than individual objects. Static members are shared among all instances of the class.
+    49. Can static methods access non-static variables?
+        ◦ No, static methods cannot access non-static variables directly. They can only access static variables or other static methods.
+    50. Can static methods be overridden?
+        ◦ Static methods cannot be overridden in Java. They can only be hidden by subclass methods with the same signature.
+    51. What is the purpose of the final keyword in Java?
+        ◦ The final keyword in Java is used to restrict the further modification of classes, methods, and variables. It can make a class not extendable, a method not overrideable, or a variable constant.
+    52. Can a final class be extended?
+        ◦ No, a final class cannot be extended in Java. Any attempt to extend a final class will result in a compilation error.
+    53. Can a final method be overridden?
+        ◦ No, a final method cannot be overridden in Java. Any attempt to override a final method will result in a compilation error.
+    54. Can final variables be modified?
+        ◦ No, final variables cannot be modified after they are initialized. They act as constants and their values cannot be changed.
+    55. What is the purpose of the abstract keyword in Java?
+        ◦ The abstract keyword in Java is used to declare abstract classes and methods. An abstract class cannot be instantiated, and an abstract method must be implemented by its subclasses.
+    56. Can an abstract class have a constructor?
+        ◦ Yes, an abstract class can have a constructor. It is invoked when a concrete subclass is instantiated and is responsible for initializing the state of the abstract class.
+    57. Can an abstract class have non-abstract methods?
+        ◦ Yes, an abstract class can have both abstract and non-abstract (concrete) methods. Concrete methods provide default implementations that can be overridden by subclasses.
+    58. Can an interface extend another interface?
+        ◦ Yes, an interface in Java can extend one or more other interfaces using the extends keyword. This allows the sub-interface to inherit the methods of the super-interface(s).
+    59. Can an interface implement another interface?
+        ◦ No, an interface in Java cannot implement another interface. However, a class that implements an interface can implement multiple interfaces.
+    60. Can an interface have constructors?
+        ◦ No, an interface in Java cannot have constructors. Interfaces only define methods and constants that implementing classes must provide.
+    61. Can an interface have fields?
+        ◦ Yes, an interface in Java can have constant fields, which are implicitly public, static, and final. These fields must be initialized with a value.
+    62. What is the purpose of the default keyword in interfaces?
+        ◦ The default keyword in interfaces is used to define default implementations for methods. Classes that implement the interface can use the default implementation or provide their own implementation.
+    63. Can an interface have static methods?
+        ◦ Yes, an interface in Java can have static methods. Static methods in interfaces can be invoked using the interface name without requiring an instance of the implementing class.
+    64. What is the purpose of the private access modifier in Java?
+        ◦ The private access modifier in Java is used to restrict access to members (variables and methods) within the same class. Private members cannot be accessed from outside the class.
+    65. Can a private method be overridden?
+        ◦ No, a private method cannot be overridden in Java because it is not visible to subclasses. It is accessible only within the class in which it is defined.
+    66. Can a private method be inherited?
+        ◦ Yes, a private method can be inherited in Java, but it cannot be accessed directly by subclasses. However, it can be invoked indirectly through public or protected methods of the superclass.
+    67. What is method hiding in Java?
+        ◦ Method hiding occurs when a subclass defines a static method with the same signature as a static method in its superclass. The method in the subclass hides the method in the superclass.
+    68. What is dynamic method dispatch?
+        ◦ Dynamic method dispatch in Java refers to the mechanism by which the correct version of an overridden method is called at runtime based on the type of the object.
+    69. What is the difference between static and dynamic method dispatch?
+        ◦ Static method dispatch (or static binding) occurs at compile time and involves calling the method based on the reference type, while dynamic method dispatch (or dynamic binding) occurs at runtime and involves calling the method based on the object type.
+    70. What is the instanceof operator used for?
+        ◦ The instanceof operator in Java is used to test whether an object is an instance of a particular class or interface. It returns true if the object is an instance of the specified type, otherwise false.
+    71. What is the purpose of the finalize() method in Java?
+        ◦ The finalize() method in Java is called by the garbage collector before an object is reclaimed by the memory management system. It can be overridden to perform cleanup operations on the object before it is destroyed.
+    72. What is garbage collection in Java?
+        ◦ Garbage collection in Java is the process by which the JVM automatically deallocates memory that is no longer in use by any part of the program. It helps in managing memory efficiently and avoiding memory leaks.
+    73. How does garbage collection work in Java?
+        ◦ Garbage collection in Java works by identifying objects that are no longer reachable or referenced by any part of the program and reclaiming the memory occupied by those objects.
+    74. What is the finalize() method?
+        ◦ The finalize() method in Java is a method of the Object class that is called by the garbage collector before an object is reclaimed by the memory management system. It can be overridden to perform cleanup operations on the object before it is destroyed.
+    75. Can the finalize() method be called explicitly?
+        ◦ No, the finalize() method cannot be called explicitly by the programmer. It is automatically called by the garbage collector before an object is garbage collected.
+    76. What is the purpose of the clone() method in Java?
+        ◦ The clone() method in Java is used to create a copy of an object. It returns a new object that is a copy of the original object. The clone() method is declared in the Cloneable interface.
+    77. How is the clone() method implemented in Java?
+        ◦ The clone() method in Java is implemented by creating a new object of the same class and copying the values of all instance variables from the original object to the new object.
+    78. What is shallow cloning?
+        ◦ Shallow cloning is the process of creating a new object that is a copy of the original object, but only the top-level fields are copied. If the object contains references to other objects, the references are copied, but not the objects themselves.
+    79. What is deep cloning?
+        ◦ Deep cloning is the process of creating a new object that is a complete and independent copy of the original object, including all nested objects. Each nested object is recursively copied to ensure that the entire object hierarchy is duplicated.
+    80. How do you prevent a class from being subclassed in Java?
+        ◦ To prevent a class from being subclassed in Java, you can declare the class as final. This prevents other classes from extending it.
+    81. How do you prevent a method from being overridden in Java?
+        ◦ To prevent a method from being overridden in Java, you can declare the method as final. This prevents subclasses from providing a different implementation of the method.
+    82. How do you prevent a variable from being modified in Java?
+        ◦ To prevent a variable from being modified in Java, you can declare the variable as final. This makes the variable a constant, and its value cannot be changed after initialization.
+    83. What is the purpose of the transient keyword in Java?
+        ◦ The transient keyword in Java is used to indicate that a field should not be serialized when the object is written to a file or transmitted over a network. Transient fields are excluded from the serialization process.
+    84. What is the purpose of the volatile keyword in Java?
+        ◦ The volatile keyword in Java is used to indicate that a variable's value may be modified by multiple threads simultaneously. It ensures that changes to the variable are immediately visible to other threads.
+    85. What is synchronization in Java?
+        ◦ Synchronization in Java is the process of controlling access to shared resources or critical sections of code by multiple threads to prevent race conditions and ensure data consistency.
+    86. What is a thread in Java?
+        ◦ A thread in Java is the smallest unit of execution that can independently execute a set of instructions. Java supports multithreading, allowing multiple threads to run concurrently within a single program.
+    87. How do you create a thread in Java?
+        ◦ There are two ways to create a thread in Java: by extending the Thread class and overriding its run() method, or by implementing the Runnable interface and passing it to a Thread constructor.
+    88. What is the Thread class in Java?
+        ◦ The Thread class in Java is a class provided by the Java API for creating and managing threads. It provides methods for starting, stopping, pausing, and resuming threads, as well as for controlling thread priority and synchronization.
+    89. What is the Runnable interface in Java?
+        ◦ The Runnable interface in Java is a functional interface that represents a task that can be executed by a thread. It defines a single abstract method, run(), which contains the code to be executed by the thread.
+    90. What is the difference between extending the Thread class and implementing the Runnable interface for creating threads?
+        ◦ Extending the Thread class involves creating a new subclass of Thread and overriding its run() method. Implementing the Runnable interface involves implementing the run() method in a separate class and passing it to a Thread constructor.
+    91. What is a daemon thread?
+        ◦ A daemon thread in Java is a thread that runs in the background and does not prevent the JVM from exiting when all non-daemon threads have terminated. Daemon threads are typically used for tasks that can be safely abandoned if the program terminates.
+    92. How do you set a thread as a daemon thread in Java?
+        ◦ You can set a thread as a daemon thread by calling the setDaemon(true) method on the thread object before starting the thread. This marks the thread as a daemon thread, and it will run in the background.
+    93. What is thread synchronization?
+        ◦ Thread synchronization in Java is the process of coordinating the execution of multiple threads to ensure that they do not interfere with each other when accessing shared resources or critical sections of code.
+    94. What is the purpose of the synchronized keyword in Java?
+        ◦ The synchronized keyword in Java is used to create synchronized blocks of code or methods that can be accessed by only one thread at a time. It prevents race conditions and ensures data consistency in multithreaded programs.
+    95. What is a deadlock in Java?
+        ◦ A deadlock in Java occurs when two or more threads are blocked indefinitely, each waiting for the other to release a resource that it needs. Deadlocks can occur when locks are not acquired and released in the correct order.
+    96. How do you prevent deadlocks in Java?
+        ◦ Deadlocks in Java can be prevented by following best practices for acquiring and releasing locks, using timeout mechanisms for locks, avoiding nested locks, and using higher-level concurrency utilities provided by the Java API.
+    97. What is thread safety?
+        ◦ Thread safety in Java refers to the property of a class or method that ensures it behaves correctly when accessed by multiple threads simultaneously. Thread-safe classes and methods are designed to prevent race conditions and data corruption.
+    98. What is the volatile keyword used for in Java?
+        ◦ The volatile keyword in Java is used to indicate that a variable's value may be modified by multiple threads simultaneously. It ensures that changes to the variable are immediately visible to other threads.
+    99. What is the purpose of the wait() method in Java?
+        ◦ The wait() method in Java is used to make a thread wait until another thread invokes the notify() or notifyAll() method on the same object. It is typically used for inter-thread communication and synchronization.
+    100. What is the purpose of the notify() method in Java?
+        ◦ The notify() method in Java is used to wake up a single thread that is waiting on the same object by calling the wait() method. It is typically used for inter-thread communication and synchronization.
+    101. What is the purpose of the notifyAll() method in Java?
+        ◦ The notifyAll() method in Java is used to wake up all threads that are waiting on the same object by calling the wait() method. It is typically used for inter-thread communication and synchronization.
+    102. What is the purpose of the yield() method in Java?
+        ◦ The yield() method in Java is used to temporarily pause the execution of the current thread and give other threads of the same priority a chance to execute. It is a hint to the scheduler that the thread is willing to yield its current use of the CPU.
+    103. What is the purpose of the sleep() method in Java?
+        ◦ The sleep() method in Java is used to pause the execution of the current thread for a specified amount of time. It is typically used for introducing delays or for timing purposes.
+    104. What is the purpose of the interrupt() method in Java?
+        ◦ The interrupt() method in Java is used to interrupt the execution of a thread by setting its interrupt status. It can be used to gracefully terminate a thread or to signal it to stop its execution.
+    105. What is a race condition?
+        ◦ A race condition in Java occurs when the behavior of a program depends on the relative timing or interleaving of multiple threads, and the outcome is unpredictable or incorrect. Race conditions can lead to bugs and data corruption in multithreaded programs.
+    106. What is a synchronized block in Java?
+        ◦ A synchronized block in Java is a block of code that is executed by only one thread at a time, preventing concurrent access to shared resources or critical sections of code. It is synchronized on a specific object or class.
+    107. What is the purpose of the volatile keyword in Java?
+        ◦ The volatile keyword in Java is used to indicate that a variable's value may be modified by multiple threads simultaneously. It ensures that changes to the variable are immediately visible to other threads.
+    108. What is the difference between synchronized and volatile in Java?
+        ◦ The synchronized keyword in Java is used to create synchronized blocks of code or methods that can be accessed by only one thread at a time. The volatile keyword is used to indicate that a variable's value may be modified by multiple threads simultaneously.
+    109. What is the purpose of the ThreadLocal class in Java?
+        ◦ The ThreadLocal class in Java is used to create thread-local variables, which are variables that have separate copies for each thread. Thread-local variables are typically used to store per-thread data without the need for synchronization.
+    110. What is the purpose of the Executor framework in Java?
+        ◦ The Executor framework in Java is a higher-level concurrency utility that simplifies the task of executing asynchronous tasks and managing thread pools. It provides a standard way to execute tasks concurrently and manage thread lifecycle.
+    111. What is the purpose of the Callable interface in Java?
+        ◦ The Callable interface in Java is a functional interface that represents a task that can be executed asynchronously and return a result. It is similar to the Runnable interface, but it can throw checked exceptions and return a result.
+    112. What is the purpose of the Future interface in Java?
+        ◦ The Future interface in Java is used to represent the result of an asynchronous computation that may not be available immediately. It provides methods for checking if the computation is complete, canceling the computation, and retrieving the result.
+    113. What is the purpose of the ForkJoinPool class in Java?
+        ◦ The ForkJoinPool class in Java is a special-purpose ExecutorService implementation that is optimized for dividing work among multiple threads using a divide-and-conquer strategy. It is typically used for parallelizing recursive algorithms.
+    114. What is the purpose of the CountDownLatch class in Java?
+        ◦ The CountDownLatch class in Java is a synchronization aid that allows one or more threads to wait until a set of operations being performed in other threads completes. It is initialized with a count, and each call to countDown() decrements the count.
+    115. What is the purpose of the CyclicBarrier class in Java?
+        ◦ The CyclicBarrier class in Java is a synchronization aid that allows a group of threads to wait until a set of operations being performed in other threads completes. It is initialized with a count and a barrier action, and each call to await() decrements the count.
+    116. What is the purpose of the Semaphore class in Java?
+        ◦ The Semaphore class in Java is a synchronization aid that allows a fixed number of threads to access a shared resource or perform a certain task concurrently. It is initialized with a count, and each call to acquire() decrements the count, while each call to release() increments it.
+    117. What is the purpose of the Lock interface in Java?
+        ◦ The Lock interface in Java is a synchronization aid that provides more flexible and sophisticated ways to manage locks than the built-in synchronized blocks. It allows finer-grained control over the locking and unlocking of resources.
+    118. What is the purpose of the ReentrantLock class in Java?
+        ◦ The ReentrantLock class in Java is an implementation of the Lock interface that provides reentrant mutual exclusion. It allows a thread to acquire the lock multiple times without deadlocking and supports various locking mechanisms, such as fairness and interruptibility.
+    119. What is the purpose of the ReadWriteLock interface in Java?
+        ◦ The ReadWriteLock interface in Java is a synchronization aid that provides separate locks for reading and writing operations on a shared resource. It allows multiple threads to read the resource concurrently but only one thread to write to the resource at a time.
+    120. What is the purpose of the ReadWriteLock interface in Java?
+        ◦ The ReadWriteLock interface in Java is a synchronization aid that provides separate locks for reading and writing operations on a shared resource. It allows multiple threads to read the resource concurrently but only one thread to write to the resource at a time.
+    121. What is a lambda expression in Java?
+        ◦ A lambda expression in Java is a concise way to represent an anonymous function or method that can be passed as an argument to other methods or stored in variables. It is used to implement functional interfaces with a single abstract method.
+    122. What is a functional interface in Java?
+        ◦ A functional interface in Java is an interface that contains only one abstract method, known as the functional method. Functional interfaces are used to represent lambdas or method references, and they can be annotated with the @FunctionalInterface annotation.
+    123. What is the purpose of the Predicate interface in Java?
+        ◦ The Predicate interface in Java is a functional interface that represents a predicate, which is a boolean-valued function that tests whether a given input satisfies a certain condition. It defines a single method, test(), that returns a boolean value.
+    124. What is the purpose of the Consumer interface in Java?
+        ◦ The Consumer interface in Java is a functional interface that represents an operation that takes a single input and returns no result. It defines a single method, accept(), that takes an argument of type T and performs some operation on it.
+    125. What is the purpose of the Function interface in Java?
+        ◦ The Function interface in Java is a functional interface that represents a function that takes an argument of type T and returns a result of type R. It defines a single method, apply(), that takes an argument of type T and returns a result of type R.
+    126. What is the purpose of the Supplier interface in Java?
+        ◦ The Supplier interface in Java is a functional interface that represents a supplier of results. It defines a single method, get(), that returns a result of type T. Suppliers are typically used to generate or supply values lazily.
+    127. What is the purpose of the Optional class in Java?
+        ◦ The Optional class in Java is a container object that may or may not contain a non-null value. It is used to represent optional values in a type-safe manner and avoid NullPointerExceptions.
+    128. What is the purpose of the Stream API in Java?
+        ◦ The Stream API in Java is a new addition in Java 8 that provides a fluent and functional way to process collections of data. It allows developers to perform operations such as filtering, mapping, sorting, and aggregating on collections in a concise and expressive manner.
+    129. What is a stream in Java?
+        ◦ A stream in Java is a sequence of elements that supports various operations to perform computation on those elements. Streams are created from collections, arrays, or I/O channels and can be processed in a functional style using methods such as filter(), map(), reduce(), and collect().
+    130. What are intermediate operations in Java streams?
+        ◦ Intermediate operations in Java streams are operations that transform or filter the elements of a stream and return a new stream as a result. Examples of intermediate operations include filter(), map(), sorted(), and distinct().
+    131. What are terminal operations in Java streams?
+        ◦ Terminal operations in Java streams are operations that produce a result or a side effect and terminate the stream. Examples of terminal operations include forEach(), reduce(), collect(), and count().
+    132. What is lazy evaluation in Java streams?
+        ◦ Lazy evaluation in Java streams refers to the characteristic of streams where intermediate operations are not evaluated until a terminal operation is invoked. This allows for more efficient processing of large streams and enables optimization by the stream implementation.
+    133. What is the purpose of the flatMap() method in Java streams?
+        ◦ The flatMap() method in Java streams is used to flatten a stream of streams into a single stream. It takes a function that maps each element of the stream to another stream and then concatenates the resulting streams into a single stream.
+    134. What is the purpose of the collect() method in Java streams?
+        ◦ The collect() method in Java streams is used to accumulate the elements of a stream into a mutable result container, such as a List, Set, or Map. It takes a Collector as an argument, which specifies how the elements should be collected.
+    135. What is the purpose of the reduce() method in Java streams?
+        ◦ The reduce() method in Java streams is used to combine the elements of a stream into a single result by applying a binary operation repeatedly. It takes an initial value and a BinaryOperator as arguments and returns the reduced value.
+    136. What is the purpose of the parallel() method in Java streams?
+        ◦ The parallel() method in Java streams is used to convert a sequential stream into a parallel stream. Parallel streams allow the processing of elements to be distributed across multiple threads, potentially improving performance on multi-core systems.
+    137. What is the purpose of the findFirst() method in Java streams?
+        ◦ The findFirst() method in Java streams is used to find the first element of a stream that matches a given predicate. It returns an Optional containing the first matching element, or an empty Optional if no matching element is found.
+    138. What is the purpose of the findAny() method in Java streams?
+        ◦ The findAny() method in Java streams is used to find any element of a stream that matches a given predicate. It returns an Optional containing any matching element, or an empty Optional if no matching element is found.
+    139. What is the purpose of the allMatch() method in Java streams?
+        ◦ The allMatch() method in Java streams is used to check whether all elements of a stream match a given predicate. It returns true if all elements match the predicate, otherwise false.
+    140. What is the purpose of the anyMatch() method in Java streams?
+        ◦ The anyMatch() method in Java streams is used to check whether any element of a stream matches a given predicate. It returns true if any element matches the predicate, otherwise false.
+    141. What is the purpose of the noneMatch() method in Java streams?
+        ◦ The noneMatch() method in Java streams is used to check whether no elements of a stream match a given predicate. It returns true if no elements match the predicate, otherwise false.
+    142. What is the purpose of the forEach() method in Java streams?
+        ◦ The forEach() method in Java streams is used to perform an action for each element of a stream. It takes a Consumer as an argument, which specifies the action to be performed on each element.
+    143. What is the purpose of the map() method in Java streams?
+        ◦ The map() method in Java streams is used to transform each element of a stream using a given function. It returns a new stream containing the results of applying the function to each element of the original stream.
+    144. What is the purpose of the filter() method in Java streams?
+        ◦ The filter() method in Java streams is used to select elements from a stream that match a given predicate. It returns a new stream containing only the elements that satisfy the predicate.
+    145. What is the purpose of the sorted() method in Java streams?
+        ◦ The sorted() method in Java streams is used to sort the elements of a stream in natural order or using a custom Comparator. It returns a new stream containing the sorted elements.
+    146. What is the purpose of the distinct() method in Java streams?
+        ◦ The distinct() method in Java streams is used to remove duplicate elements from a stream. It returns a new stream containing only unique elements, as determined by the equals() method.
+    147. What is the purpose of the limit() method in Java streams?
+        ◦ The limit() method in Java streams is used to limit the size of a stream to a specified number of elements. It returns a new stream containing only the first n elements of the original stream.
+    148. What is the purpose of the skip() method in Java streams?
+        ◦ The skip() method in Java streams is used to skip a specified number of elements from the beginning of a stream. It returns a new stream containing the remaining elements of the original stream after skipping the specified number of elements.
+    149. What is the purpose of the toArray() method in Java streams?
+        ◦ The toArray() method in Java streams is used to collect the elements of a stream into an array. It returns an array containing the elements of the stream in the order they were encountered.
+    150. What is the purpose of the concat() method in Java streams?
+        ◦ The concat() method in Java streams is used to concatenate two streams into a single stream. It returns a new stream containing all the elements of the first stream followed by all the elements of the second stream.
+    151. What is the purpose of the iterate() method in Java streams?
+        ◦ The iterate() method in Java streams is used to generate an infinite stream of elements by repeatedly applying a function to the previous element. It takes an initial value and a unary operator as arguments and returns a new stream containing the generated elements.
+    152. What is the purpose of the generate() method in Java streams?
+        ◦ The generate() method in Java streams is used to generate an infinite stream of elements by repeatedly calling a supplier function. It takes a Supplier as an argument and returns a new stream containing the generated elements.
+    153. What is the purpose of the of() method in Java streams?
+        ◦ The of() method in Java streams is used to create a stream containing a fixed number of elements. It takes a variable number of arguments and returns a new stream containing the specified elements.
+    154. What is the purpose of the empty() method in Java streams?
+        ◦ The empty() method in Java streams is used to create an empty stream with no elements. It returns a new empty stream that can be used as a placeholder or base stream for further operations.
+    155. What is the purpose of the builder() method in Java streams?
+        ◦ The builder() method in Java streams is used to create a Stream.Builder for building a stream of elements incrementally. It returns a new builder that can be used to add elements to the stream and then build the final stream.
+    156. What is the purpose of the chars() method in Java streams?
+        ◦ The chars() method in Java streams is used to create a stream of int values representing the Unicode code points of the characters in a CharSequence. It returns an IntStream containing the code points of the characters.
+    157. What is the purpose of the range() method in Java streams?
+        ◦ The range() method in Java streams is used to create a sequential stream of int values in a specified range. It takes a starting value and an ending value (exclusive) as arguments and returns an IntStream containing the values in the range.
+    158. What is the purpose of the rangeClosed() method in Java streams?
+        ◦ The rangeClosed() method in Java streams is used to create a sequential stream of int values in a specified range, including both the start and end values. It takes a starting value and an ending value as arguments and returns an IntStream containing the values in the range.
+    159. What is the purpose of the empty() method in Java streams?
+        ◦ The empty() method in Java streams is used to create an empty stream with no elements. It returns a new empty stream that can be used as a placeholder or base stream for further operations.
+    160. What is the purpose of the iterator() method in Java streams?
+        ◦ The iterator() method in Java streams is used to iterate over the elements of a stream sequentially. It returns an Iterator that can be used to traverse the elements of the stream one by one.
+    161. What is the purpose of the spliterator() method in Java streams?
+        ◦ The spliterator() method in Java streams is used to create a Spliterator for traversing the elements of a stream in parallel. It returns a Spliterator that can be used to split the elements of the stream into multiple parts for concurrent processing.
+    162. What is the purpose of the parallel() method in Java streams?
+        ◦ The parallel() method in Java streams is used to convert a sequential stream into a parallel stream. Parallel streams allow the processing of elements to be distributed across multiple threads, potentially improving performance on multi-core systems.
+    163. What is the purpose of the sequential() method in Java streams?
+        ◦ The sequential() method in Java streams is used to convert a parallel stream into a sequential stream. Sequential streams process elements one by one in the encounter order, whereas parallel streams process elements concurrently.
+    164. What is the purpose of the unordered() method in Java streams?
+        ◦ The unordered() method in Java streams is used to indicate that the elements of a stream are unordered and can be processed in any order. It returns a new stream with the unordered characteristic.
+    165. What is the purpose of the distinct() method in Java streams?
+        ◦ The distinct() method in Java streams is used to remove duplicate elements from a stream. It returns a new stream containing only unique elements, as determined by the equals() method.
+    166. What is the purpose of the sorted() method in Java streams?
+        ◦ The sorted() method in Java streams is used to sort the elements of a stream in natural order or using a custom Comparator. It returns a new stream containing the sorted elements.
+    167. What is the purpose of the limit() method in Java streams?
+        ◦ The limit() method in Java streams is used to limit the size of a stream to a specified number of elements. It returns a new stream containing only the first n elements of the original stream.
+    168. What is the purpose of the skip() method in Java streams?
+        ◦ The skip() method in Java streams is used to skip a specified number of elements from the beginning of a stream. It returns a new stream containing the remaining elements of the original stream after skipping the specified number of elements.
+    169. What is the purpose of the toArray() method in Java streams?
+        ◦ The toArray() method in Java streams is used to collect the elements of a stream into an array. It returns an array containing the elements of the stream in the order they were encountered.
+    170. What is the purpose of the forEach() method in Java streams?
+        ◦ The forEach() method in Java streams is used to perform an action for each element of a stream. It takes a Consumer as an argument, which specifies the action to be performed on each element.
+    171. What is the purpose of the map() method in Java streams?
+        ◦ The map() method in Java streams is used to transform each element of a stream using a given function. It returns a new stream containing the results of applying the function to each element of the original stream.
+    172. What is the purpose of the filter() method in Java streams?
+        ◦ The filter() method in Java streams is used to select elements from a stream that match a given predicate. It returns a new stream containing only the elements that satisfy the predicate.
+    173. What is the purpose of the flatMap() method in Java streams?
+        ◦ The flatMap() method in Java streams is used to flatten a stream of streams into a single stream. It takes a function that maps each element of the stream to another stream and then concatenates the resulting streams into a single stream.
+    174. What is the purpose of the reduce() method in Java streams?
+        ◦ The reduce() method in Java streams is used to combine the elements of a stream into a single result by applying a binary operation repeatedly. It takes an initial value and a BinaryOperator as arguments and returns the reduced value.
+    175. What is the purpose of the collect() method in Java streams?
+        ◦ The collect() method in Java streams is used to accumulate the elements of a stream into a mutable result container, such as a List, Set, or Map. It takes a Collector as an argument, which specifies how the elements should be collected.
+    176. What is the purpose of the allMatch() method in Java streams?
+        ◦ The allMatch() method in Java streams is used to check whether all elements of a stream match a given predicate. It returns true if all elements match the predicate, otherwise false.
+    177. What is the purpose of the anyMatch() method in Java streams?
+        ◦ The anyMatch() method in Java streams is used to check whether any element of a stream matches a given predicate. It returns true if any element matches the predicate, otherwise false.
+    178. What is the purpose of the noneMatch() method in Java streams?
+        ◦ The noneMatch() method in Java streams is used to check whether no elements of a stream match a given predicate. It returns true if no elements match the predicate, otherwise false.
+    179. What is the purpose of the findFirst() method in Java streams?
+        ◦ The findFirst() method in Java streams is used to find the first element of a stream that matches a given predicate. It returns an Optional containing the first matching element, or an empty Optional if no matching element is found.
+    180. What is the purpose of the findAny() method in Java streams?
+        ◦ The findAny() method in Java streams is used to find any element of a stream that matches a given predicate. It returns an Optional containing any matching element, or an empty Optional if no matching element is found.
+    181. What is the purpose of the count() method in Java streams?
+        ◦ The count() method in Java streams is used to count the number of elements in a stream. It returns the count as a long value.
+    182. What is the purpose of the max() method in Java streams?
+        ◦ The max() method in Java streams is used to find the maximum element of a stream according to the natural order or a custom Comparator. It returns an Optional containing the maximum element, or an empty Optional if the stream is empty.
+    183. What is the purpose of the min() method in Java streams?
+        ◦ The min() method in Java streams is used to find the minimum element of a stream according to the natural order or a custom Comparator. It returns an Optional containing the minimum element, or an empty Optional if the stream is empty.
+    184. What is the purpose of the sum() method in Java streams?
+        ◦ The sum() method in Java streams is used to calculate the sum of the elements of a numeric stream. It returns the sum as a primitive value of the same type as the elements of the stream.
+    185. What is the purpose of the average() method in Java streams?
+        ◦ The average() method in Java streams is used to calculate the average of the elements of a numeric stream. It returns the average as an OptionalDouble, which may be empty if the stream is empty.
+    186. What is the purpose of the count() method in Java streams?
+        ◦ The count() method in Java streams is used to count the number of elements in a stream. It returns the count as a long value.
+    187. What is the purpose of the max() method in Java streams?
+        ◦ The max() method in Java streams is used to find the maximum element of a stream according to the natural order or a custom Comparator. It returns an Optional containing the maximum element, or an empty Optional if the stream is empty.
+    188. What is the purpose of the min() method in Java streams?
+        ◦ The min() method in Java streams is used to find the minimum element of a stream according to the natural order or a custom Comparator. It returns an Optional containing the minimum element, or an empty Optional if the stream is empty.
+    189. What is the purpose of the sum() method in Java streams?
+        ◦ The sum() method in Java streams is used to calculate the sum of the elements of a numeric stream. It returns the sum as a primitive value of the same type as the elements of the stream.
+    190. What is the purpose of the average() method in Java streams?
+        ◦ The average() method in Java streams is used to calculate the average of the elements of a numeric stream. It returns the average as an OptionalDouble, which may be empty if the stream is empty.
+    191. What is the purpose of the groupingBy() method in Java streams?
+        ◦ The groupingBy() method in Java streams is used to group the elements of a stream by a given classifier function. It returns a Collector that collects the elements of the stream into a Map whose keys are the result of applying the classifier function to the elements.
+    192. What is the purpose of the partitioningBy() method in Java streams?
+        ◦ The partitioningBy() method in Java streams is used to partition the elements of a stream into two groups based on a given predicate. It returns a Collector that collects the elements of the stream into a Map whose keys are true and false, representing whether the elements satisfy the predicate.
+    193. What is the purpose of the joining() method in Java streams?
+        ◦ The joining() method in Java streams is used to concatenate the elements of a stream into a single String. It returns a Collector that collects the elements of the stream into a String, optionally separated by a delimiter, with an optional prefix and suffix.
+    194. What is the purpose of the mapping() method in Java streams?
+        ◦ The mapping() method in Java streams is used to apply a mapping function to the elements of a stream before collecting them. It returns a Collector that collects the elements of the stream after applying the mapping function.
+    195. What is the purpose of the reducing() method in Java streams?
+        ◦ The reducing() method in Java streams is used to perform a reduction operation on the elements of a stream using a given binary operator. It returns a Collector that collects the elements of the stream by repeatedly applying the binary operator.
+    196. What is the purpose of the summarizingInt() method in Java streams?
+        ◦ The summarizingInt() method in Java streams is used to calculate statistics, such as count, sum, min, max, and average, for the elements of a stream of int values. It returns a Collector that collects the statistics for the stream.
+    197. What is the purpose of the summarizingDouble() method in Java streams?
+        ◦ The summarizingDouble() method in Java streams is used to calculate statistics, such as count, sum, min, max, and average, for the elements of a stream of double values. It returns a Collector that collects the statistics for the stream.
+    198. What is the purpose of the summarizingLong() method in Java streams?
+        ◦ The summarizingLong() method in Java streams is used to calculate statistics, such as count, sum, min, max, and average, for the elements of a stream of long values. It returns a Collector that collects the statistics for the stream.
+    199. What is the purpose of the toList() method in Java streams?
+        ◦ The toList() method in Java streams is used to collect the elements of a stream into a List. It returns a Collector that collects the elements of the stream into a new ArrayList.
+    200. What is the purpose of the toSet() method in Java streams?
+        ◦ The toSet() method in Java streams is used to collect the elements of a stream into a Set. It returns a Collector that collects the elements of the stream into a new HashSet.
